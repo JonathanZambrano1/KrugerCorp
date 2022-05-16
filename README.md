@@ -54,6 +54,7 @@ _PUT - /update: Recibe un formato JSON. Ejemplo:_
 ```
 _PUT - /delete/{cedula}: Recibe la cedula._
 _PUT - /updateVacunacion: Recibe un formato JSON. Ejemplo:_
+
 ```sh
 {
     "cedula": "Ingrese la Cedula",
@@ -64,6 +65,7 @@ _PUT - /updateVacunacion: Recibe un formato JSON. Ejemplo:_
 }
 ```
 _Nota: El estado de la vacuna es 1 o 0 donde 1 es Vacunado y 0 No Vacunado._
+
 _GET - /filter/{option}/{info}: Existen 4 tipo de filtrado:_
 -   filter/{state}/{0 - 1}: El estado si esta vacunado o no.
 -   filter/{type}/{Nombre de la vacuna}: Para saber las personas vacunadas con ese tipo de vacuna.
