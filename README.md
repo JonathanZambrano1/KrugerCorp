@@ -71,5 +71,6 @@ _GET - /filter/{option}/{info}: Existen 4 tipo de filtrado:_
 -   filter/{rol}/{Empleado o Administrador}: El listado de las personas con ese rol.
 
 ## Consumir la API -  Swagger
-- Ejecutar el programa
+- Una vez descargado e importado el programa en nuestro IDE.
+- Debemos ejecutar el programa.
 - Abrir el navegador y colocar la siguiente URL: http://localhost:8080/swagger-ui/index.html#/
