@@ -63,10 +63,13 @@ _PUT - /updateVacunacion: Recibe un formato JSON. Ejemplo:_
     "numeroDosis": Ingrese el numero de dosis
 }
 ```
-_Nota: El estao de la vacuna es 1 o 0 donde 1 es Vacunado y 0 No Vacunado._
+_Nota: El estado de la vacuna es 1 o 0 donde 1 es Vacunado y 0 No Vacunado._
 _GET - /filter/{option}/{info}: Existen 4 tipo de filtrado:_
 -   filter/{state}/{0 - 1}: El estado si esta vacunado o no.
 -   filter/{type}/{Nombre de la vacuna}: Para saber las personas vacunadas con ese tipo de vacuna.
 -   filter/{range}/{Rango de la fecha 1, Rango de la Fecha 2}: Tener en cuenta el siguiente Ejemplo: 2020-01-21,2022-03-15.
 -   filter/{rol}/{Empleado o Administrador}: El listado de las personas con ese rol.
 
+## Consumir la API -  Swagger
+- Ejecutar el programa
+- Abrir el navegador y colocar la siguiente URL: http://localhost:8080/swagger-ui/index.html#/
