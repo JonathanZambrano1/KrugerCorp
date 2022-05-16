@@ -30,7 +30,7 @@ _POST - /register: Recibe un formato JSON. Ejemplo:_
     "nombre": "Ingrese el Nombre",
     "apellido": "Ingrese el Apellido",
     "correo": "Ingrese el Correo",
-    "fechaNacimiento": "Ingrese la Fecha",
+    "fechaNacimiento": "Ingrese la Fecha (año-mes-dia)",
     "direccion": "Ingrese la Dirección",
     "telefono": "Ingrese el Telefono",
     "rol": "Ingrese el rol Administrador o Empleado"
@@ -46,7 +46,7 @@ _PUT - /update: Recibe un formato JSON. Ejemplo:_
     "nombre": "Ingrese el Nombre",
     "apellido": "Ingrese el Apellido",
     "correo": "Ingrese el Correo",
-    "fechaNacimiento": "Ingrese la Fecha",
+    "fechaNacimiento": "Ingrese la Fecha (año-mes-dia)",
     "direccion": "Ingrese la Dirección",
     "telefono": "Ingrese el Telefono",
     "rol": "Ingrese el rol Administrador o Empleado"
