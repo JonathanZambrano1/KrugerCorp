@@ -16,7 +16,7 @@ _Nota: Actualmente la base no posee ningun registro._
 La API cuenta con una clase de Conexiones, por lo que se tiene que tener en cuenta el cambio de Usuario y de la Contraseña,
 
 - Descargar e importar el proyecto en nuestro IDE, para así poder tener un correcto funcionamiento de este.
-- Dentro del proyecto se el archivo "KrugerCorp.yaml", esta la podremos visualizar utilizando el Swagger Editor https://editor.swagger.io
+- Dentro del proyecto se encuentra el archivo "KrugerCorp.yaml", esta la podremos visualizar utilizando el Swagger Editor https://editor.swagger.io
 - Dentro del pom.xml encontraremos todas las dependencias de la aplicación.
 
 
