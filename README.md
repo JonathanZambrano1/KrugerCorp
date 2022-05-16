@@ -22,6 +22,7 @@ La API cuenta con una clase de Conexiones, por lo que se tiene que tener en cuen
 
 ## Consumir la API -  Postman
 _GET - /login/{cedula}/{password} : Recibe la cédula y la contraseña._
+
 _POST - /register: Recibe un formato JSON. Ejemplo:_
 
 ```sh
@@ -53,6 +54,7 @@ _PUT - /update: Recibe un formato JSON. Ejemplo:_
 }
 ```
 _PUT - /delete/{cedula}: Recibe la cedula._
+
 _PUT - /updateVacunacion: Recibe un formato JSON. Ejemplo:_
 
 ```sh
