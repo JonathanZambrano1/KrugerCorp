@@ -79,37 +79,10 @@ public class ControladorAdmin {
 
     }
 
-    /*@GetMapping("filter/rol/{search}")
-    public ResponseEntity filterRol(@PathVariable String rol) throws SQLException, JSONException {
-        DataConnection connection = null;
-        DTOResponse d = new DTOResponse();
-        Map<String, Object> obj = new HashMap<>();
-        try {
-            connection = new DataConnection();
-            connection.open();
-            Administrador admin = new Administrador(connection);
-            List<DTOUsuario> user = admin.getFilterRol(rol);
-            if (user.size() <= 0) {
-                obj.put("Info", "Error el rol no existe");
-            } else {
-                obj.put("Info", user);
-            }
-        } catch (Exception e) {
-            obj.put("Usuario", e.fillInStackTrace());
-        } finally {
-            connection.close();
-        }
-        d.setData(obj);
-        Gson objGson = new GsonBuilder().setExclusionStrategies(new AnnotationExclusionStrategy()).create();
-        return ResponseEntity
-                .ok(objGson.toJson(d));
-
-    }*/
     @GetMapping("filter/{option}/{info}")
     public ResponseEntity filterState(@PathVariable String option,
             @PathVariable String info) throws SQLException, JSONException {
         DataConnection connection = null;
-        //JSONObject data = new JSONObject();
         DTOResponse d = new DTOResponse();
         Map<String, Object> obj = new HashMap<>();
         try {
