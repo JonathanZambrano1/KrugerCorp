@@ -1,0 +1,145 @@
+openapi: 3.0.1
+info:
+  title: API KrugerCorp - Sistema
+  version: v1
+servers:
+  - url: http://localhost:8080/
+    description: Url Principal
+paths:
+  /update:
+    put:
+      tags:
+        - Controlador Administrador
+      operationId: updateUsuario
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+  /updateVacunacion:
+    put:
+      tags:
+        - Controlador Usuario
+      operationId: updateVacunacion
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+  /delete/{cedula}:
+    put:
+      tags:
+        - Controlador Administrador
+      operationId: deleteUsuario
+      parameters:
+        - name: cedula
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /register:
+    post:
+      tags:
+        - Controlador Usuario
+      operationId: registerUser
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+        required: true
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: string
+  /login/{cedula}/{password}:
+    get:
+      tags:
+        - Controlador Usuario
+      operationId: login
+      parameters:
+        - name: cedula
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: password
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /filter/{option}/{info}:
+    get:
+      tags:
+        - Controlador Administrador
+      operationId: filterState
+      parameters:
+        - name: option
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: info
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+  /alta/{cedula}:
+    get:
+      tags:
+        - Controlador Administrador
+      operationId: altaUsuario
+      parameters:
+        - name: cedula
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+components: {}

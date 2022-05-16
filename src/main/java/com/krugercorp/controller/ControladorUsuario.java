@@ -106,23 +106,5 @@ public class ControladorUsuario {
         return data.toString();
 
     }
-        
-    @GetMapping("alta/{cedula}")
-    public String altaUsuario(@PathVariable String cedula) throws SQLException, JSONException {
-        DataConnection connection = null;
-        JSONObject data = new JSONObject();
-        try {
-            connection = new DataConnection();
-            connection.open();
-            Usuario usuario = new Usuario(connection);
-            data.put("Usuario", usuario.darAlta(cedula));
-        } catch (Exception e) {
-            data.put("Usuario", e.fillInStackTrace());
-        } finally {
-            connection.close();
-        }
-        return data.toString();
-
-    }
 
 }
