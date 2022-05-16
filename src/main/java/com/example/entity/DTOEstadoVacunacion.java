@@ -1,0 +1,53 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.example.entity;
+
+import javax.persistence.Column;
+import lombok.Getter;
+import lombok.Setter;
+
+/**
+ *
+ * @author JEZ
+ */
+public class DTOEstadoVacunacion {
+
+    @Getter @Setter
+    @Column(name = "cedula")
+    private String cedula;  
+    
+    @Getter @Setter
+    @Column(name = "estado_vacunacion")
+    private String estadoVac;
+
+    @Getter @Setter
+    @Column(name = "tipo_vacuna")
+    private String tipoVacuna;
+
+    @Getter @Setter
+    @Column(name = "fecha_vacunacion")
+    private String fechaVacuna;
+
+    @Getter @Setter
+    @Column(name = "numero_dosis")
+    private int numeroDosis;
+    
+    // Temporal
+    
+    @Getter @Setter
+    @Column(name = "nombre")
+    private String nombre;
+    
+    @Getter @Setter
+    @Column(name = "apellido")
+    private String apellido;
+    
+    @Getter @Setter
+    @Column(name = "correo")
+    private String correo;
+
+
+}
