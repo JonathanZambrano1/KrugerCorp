@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.example.management;
+package com.krugercorp.management;
 
-import com.example.data.DataAdministrador;
-import com.example.data.DataConnection;
-import com.example.entity.DTOEstadoVacunacion;
-import com.example.entity.DTOUsuario;
+import com.krugercorp.data.DataAdministrador;
+import com.krugercorp.data.DataConnection;
+import com.krugercorp.entity.DTOEstadoVacunacion;
+import com.krugercorp.entity.DTOUsuario;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.regex.Matcher;

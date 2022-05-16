@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.example.data;
+package com.krugercorp.data;
 
-import com.example.entity.DTOUsuario;
-import com.example.util.Convert;
+import com.krugercorp.entity.DTOUsuario;
+import com.krugercorp.util.Convert;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 

@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.example.demo;
+package com.krugercorp.controller;
 
-import com.example.data.DataConnection;
-import com.example.entity.DTOEstadoVacunacion;
-import com.example.entity.DTOUsuario;
-import com.example.management.Administrador;
-import com.example.util.AnnotationExclusionStrategy;
-import com.example.util.DTOResponse;
+import com.krugercorp.data.DataConnection;
+import com.krugercorp.entity.DTOEstadoVacunacion;
+import com.krugercorp.entity.DTOUsuario;
+import com.krugercorp.management.Administrador;
+import com.krugercorp.util.AnnotationExclusionStrategy;
+import com.krugercorp.util.DTOResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.sql.SQLException;
